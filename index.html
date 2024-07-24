@@ -8,6 +8,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+
 </head>
 <body>
     <header>
@@ -24,12 +29,18 @@
     <main>
         <br> <br> <br>
         <!-- Sección orientada a la introducción -->
-        <section id="home">
-            <h1> Santiago Ponce </h1>
-            <h2> Hey!, Conóceme. </h2>
-            <p> Soy Santiago Ponce, un desarrollador de software enfocado al Diseño Web. </p>
-            <button class="btn btn-primary"> Contáctanme </button>
-            <button class="btn btn-secondary"> Mis trabajos </button>
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <div class="text-container">
+                    <h2>Hey!, Conóceme.</h2>
+                    <p>Soy Santiago Ponce, un desarrollador de software enfocado al Diseño Web.</p>
+                    <button class="btn btn-primary">Contáctanme</button>
+                    <button class="btn btn-secondary">Mis trabajos</button>
+                </div>
+                <div class="image-container">
+                    <img src="images/profile.jpg" alt="Profile Picture">
+                </div>
+            </div>
         </section>
 
         <!-- Sección orientada a mi información personal -->
@@ -54,21 +65,21 @@
                 <!-- Slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="images/project1.jpg" alt="Project 1">
+                        <img src="images/project1.png" alt="Project 1">
                         <div class="carousel-caption">
                             <h3>Space Shot</h3>
                             <p>Space Shot es un videojuego que diseñé en Unity 3D.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="images/project2.jpg" alt="Project 2">
+                        <img src="images/project2.png" alt="Project 2">
                         <div class="carousel-caption">
                             <h3>AudioMix Web Page</h3>
                             <p>AudioMix es una página web diseñada para la venta de equipo de audio para shows en vivo.</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="images/project3.jpg" alt="Project 3">
+                        <img src="images/project3.png" alt="Project 3">
                         <div class="carousel-caption">
                             <h3>Base de datos sobre fórmula 1 en (JSON)</h3>
                             <p>Una base de datos desarrollada en CouchDB y MongoDB.</p>
@@ -91,25 +102,28 @@
         <!-- Sección orientada a Educación -->
         <section id="education">
             <h2> Education & Resume </h2>
-            <div>
-                <h3> Carrera Técnica en Programación </h3>
-                <h4> 2018 - 2021 </h4>
-                <p> Curse mi preparatoria con una carrera técnica en programación en el Cecyteq plantel 05. </p>
-            </div>
-            <div>
-                <h3> Técnico en Programación </h3>
-                <h4> 2018 - 2021 </h4>
-                <p> Título en técnico en programación en el Cecyteq plantel 05 de Qro, desarrollando habilidades como pensamiento lógico
-                    matemático, lenguajes como C++, Java y algún manejo de desarrollo de aplicaciones móviles como en Android Studio. </p>
-            </div>
-            <div>
-                <h3> Manejo de Aplicaciones de Adobe </h3>
-                <h4> Autodidacta </h4>
-                <p> Poseo una habilidad del manejo de aplicaciones de Adobe, siendo estas Photoshop, Audition, Illustrator,
-                    After Effects, y Premiere Pro, los cuales utilizaba para trabajos artísticos pero ahora me ayudan
-                    en distintos trabajos en SW como diseño web, creación de logotipos, etc. </p>
+            <div class="education-container">
+                <div class="education-item">
+                    <h3> Carrera Técnica en Programación </h3>
+                    <h4> 2018 - 2021 </h4>
+                    <p> Curse mi preparatoria con una carrera técnica en programación en el Cecyteq plantel 05. </p>
+                </div>
+                <div class="education-item">
+                    <h3> Técnico en Programación </h3>
+                    <h4> 2018 - 2021 </h4>
+                    <p> Título en técnico en programación en el Cecyteq plantel 05 de Qro, desarrollando habilidades como pensamiento lógico
+                        matemático, lenguajes como C++, Java y algún manejo de desarrollo de aplicaciones móviles como en Android Studio. </p>
+                </div>
+                <div class="education-item">
+                    <h3> Manejo de Aplicaciones de Adobe </h3>
+                    <h4> Autodidacta </h4>
+                    <p> Poseo una habilidad del manejo de aplicaciones de Adobe, siendo estas Photoshop, Audition, Illustrator,
+                        After Effects, y Premiere Pro, los cuales utilizaba para trabajos artísticos pero ahora me ayudan
+                        en distintos trabajos en SW como diseño web, creación de logotipos, etc. </p>
+                </div>
             </div>
         </section>
+
 
         <!-- Sección orientada a Habilidades -->
         <section id="skills">
@@ -120,49 +134,49 @@
                 <div class="skill">
                     <div class="skill-name">Adobe Products</div>
                     <div class="skill-bar">
-                        <div class="skill-percentage" style="width: 90%;"></div>
-                    </div>
-                    <p>90%</p>
-                </div>
-                
-                <div class="skill">
-                    <div class="skill-name">HTML5</div>
-                    <div class="skill-bar">
-                        <div class="skill-percentage" style="width: 95%;"></div>
-                    </div>
-                    <p>95%</p>
-                </div>
-                
-                <div class="skill">
-                    <div class="skill-name">CSS</div>
-                    <div class="skill-bar">
                         <div class="skill-percentage" style="width: 70%;"></div>
                     </div>
                     <p>70%</p>
                 </div>
                 
                 <div class="skill">
+                    <div class="skill-name">HTML5</div>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 80%;"></div>
+                    </div>
+                    <p>80%</p>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 75%;"></div>
+                    </div>
+                    <p>75%</p>
+                </div>
+                
+                <div class="skill">
                     <div class="skill-name">JavaScript</div>
                     <div class="skill-bar">
-                        <div class="skill-percentage" style="width: 85%;"></div>
+                        <div class="skill-percentage" style="width: 65%;"></div>
                     </div>
-                    <p>85%</p>
+                    <p>65%</p>
                 </div>
                 
                 <div class="skill">
                     <div class="skill-name">JQuery</div>
                     <div class="skill-bar">
-                        <div class="skill-percentage" style="width: 90%;"></div>
+                        <div class="skill-percentage" style="width: 55%;"></div>
                     </div>
-                    <p>90%</p>
+                    <p>55%</p>
                 </div>
                 
                 <div class="skill">
                     <div class="skill-name">Phyton</div>
                     <div class="skill-bar">
-                        <div class="skill-percentage" style="width: 80%;"></div>
+                        <div class="skill-percentage" style="width: 90%;"></div>
                     </div>
-                    <p>80%</p>
+                    <p>90%</p>
                 </div>
             </div>
         </section>

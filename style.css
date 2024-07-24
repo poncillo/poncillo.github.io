@@ -416,6 +416,119 @@ footer p {
     font-family: 'usuzi';
 }
 
+#education {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los bloques de educación */
+    padding: 0 20px;
+}
+
+.education-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Ancho de cada bloque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.education-item h3 {
+    font-size: 24px;
+    margin-top: 0;
+    font-family: 'usuzi';
+}
+
+.education-item h4 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans';
+}
+
+.education-item p {
+    font-size: 15px;
+    color: #333;
+    font-family: 'Josefin Sans';
+}
+
+/* Home Section */
+.home-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9; /* Puedes cambiar el color de fondo si lo deseas */
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative; /* Agrega esta línea para posicionar la imagen relativamente */
+}
+
+.text-container {
+    flex: 1;
+    text-align: left;
+}
+
+.text-container h2 {
+    font-size: 30px;
+    font-family: 'usuzi';
+    color: black;
+}
+
+.text-container p {
+    font-size: 15px;
+    font-family: 'Josefin Sans';
+    color: #000000;
+}
+
+.text-container button {
+    margin: 5px;
+}
+
+.image-container {
+    flex: 0 0 150px; /* Ajusta el tamaño del contenedor de la imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Cambia a posición absoluta para ajustar la ubicación */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del círculo */
+    border: 3px solid #000000; /* Opcional: agregar un borde a la imagen */
+}
+
+
+/*Finish Home Section*/
+
+/* Adaptar el diseño para pantallas más pequeñas */
+@media (max-width: 767px) {
+    .education-item {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    }
+}
+
 @media (max-width: 767px) {
     .skill {
         flex-direction: column;
@@ -430,7 +543,7 @@ footer p {
             margin: 0;
         }
     }
-
+}
 /* General Styles (Responsive Part) */
 /* PC's standard*/
 /* Tablet */
