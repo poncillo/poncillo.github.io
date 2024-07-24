@@ -328,6 +328,29 @@ footer p {
     filter: brightness(50%) hue-rotate(0deg) saturate(1000%);
 }
 
+.social-media {
+    text-align: center;
+}
+
+.social-list {
+    list-style-type: none; /* Eliminar viñetas de lista */
+    padding: 0; /* Eliminar espaciado de lista */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+    grid-gap: 20px; /* Espacio entre iconos */
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container img {
+    display: block;
+    margin: 0 auto;
+}
+
 /* General Styles (Responsive Part) */
 /* PC's standard*/
 /* Tablet */
