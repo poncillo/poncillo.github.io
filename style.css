@@ -400,7 +400,7 @@ footer p {
 }
 
 .skill-percentage {
-    background-color: #e9aa0a; /* Color de la barra de progreso */
+    background-color: #7A0008; /* Color de la barra de progreso */
     height: 100%;
     width: 0;
     border-radius: 5px;
@@ -676,4 +676,5 @@ footer p {
     footer p {
         font-size: 12px;
     }
+    
 }
