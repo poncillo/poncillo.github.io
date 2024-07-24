@@ -351,6 +351,86 @@ footer p {
     margin: 0 auto;
 }
 
+/* Estilos para la sección de habilidades */
+#skills {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#skills h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'usuzi';
+}
+
+#skills p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-family: 'Josefin Sans';
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.skill-name {
+    flex: 1;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'usuzi';
+}
+
+.skill-bar {
+    flex: 3;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+}
+
+.skill-percentage {
+    background-color: #e9aa0a; /* Color de la barra de progreso */
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    position: relative;
+    transition: width 1s ease-in-out;
+}
+
+.skill p {
+    flex: 1;
+    text-align: right;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'usuzi';
+}
+
+@media (max-width: 767px) {
+    .skill {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skill-name, .skill p {
+        text-align: left;
+        margin-bottom: 5px;
+
+    .skill-bar {
+            margin: 0;
+        }
+    }
+
 /* General Styles (Responsive Part) */
 /* PC's standard*/
 /* Tablet */

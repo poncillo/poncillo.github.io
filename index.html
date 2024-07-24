@@ -5,126 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Santiago Ponce</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Carlos Santiago Villegas Ponce</h1>
-        <p>Técnico en Programación y Desarrollador Web</p>
         <nav class="stickynav">
-            <a href="home">Home</a>
+            <a href="#home">Home</a>
             <a href="#about_me">About Me</a>
             <a href="#projects">Projects</a>
-            <a href="education">Education & Resume</a>
-            <a href="skills">Skills</a>
+            <a href="#education">Education & Resume</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <main>
-        <!-- Sección orientada a la introducción (manejaremos boostrap) -->
-         <section id="home">
+        <br> <br> <br>
+        <!-- Sección orientada a la introducción -->
+        <section id="home">
             <h1> Santiago Ponce </h1>
             <h2> Hey!, Conóceme. </h2>
             <p> Soy Santiago Ponce, un desarrollador de software enfocado al Diseño Web. </p>
-            <button> Contáctanme </button>
-            <button> Mis trabajos </button>
-         </section>
+            <button class="btn btn-primary"> Contáctanme </button>
+            <button class="btn btn-secondary"> Mis trabajos </button>
+        </section>
+
         <!-- Sección orientada a mi información personal -->
         <section id="about_me">
             <h2> About Me </h2>
             <p> ¡Hola! Soy Santiago Ponce, un técnico en programación y un estudiante de Ingeniería en Software con experiencia en 
                 desarrollo web y aplicaciones móviles. Me apasiona crear soluciones tecnológicas que mejoren la vida de las personas,
-             considero que la tecnología avanza de manera impresionante pemitiendonos optimizar casi cualquier proceso. </p>
+                considero que la tecnología avanza de manera impresionante permitiéndonos optimizar casi cualquier proceso. </p>
         </section>
+
         <!-- Sección orientada a proyectos -->
         <section id="projects">
             <h2>Projects</h2>
-            <div class="project">
-            <p> This is some of my projects that I worked in my process...</p>
-                <h3> Space Shot </h3>
-                <p> Space Shot es un videojuego que diseñe en Unity 3D. </p>
-                <p> Este es un juego shooter (basado en disparos y armas en combate), donde eres un soldado dentro de una nave que ha sido 
-                    invadida en medio del espacio por robots y tecnología desconocida, deberás sobrevivir a estas amenazas, ¿Podrás hacerlo?
-                </p>
-            </div>
-            <div class="project">
-                <h3> AudioMix Web Page </h3>
-                <p> AudioMix es una página web diseñada para la venta de equipo de audio para shows en vivo (conciertos, stand ups, conferencias),
-                    etc., diseñada con lenguajes como JavaScript y Php y de etiquetas como HTML, CSS, Boostrap.
-                </p>
-            </div>
-            <div class="project">
-                <h3> Base de datos sobre fórmula 1 en (JSON)</h3>
-                <p> Una base de datos desarrollada en dos sistemas gestores de bases de datos como lo son CouchDB y MongoDB, la cuál almacena
-                    diferentes tipos de datos en un evento de fórmula 1, gestionando así los horarios, fechas, horarios de cada carrera, 
-                    también los equipos, pilotos, patrocinadores, personal de lógistica, etc.
-                </p>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicadores -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/project1.jpg" alt="Project 1">
+                        <div class="carousel-caption">
+                            <h3>Space Shot</h3>
+                            <p>Space Shot es un videojuego que diseñé en Unity 3D.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/project2.jpg" alt="Project 2">
+                        <div class="carousel-caption">
+                            <h3>AudioMix Web Page</h3>
+                            <p>AudioMix es una página web diseñada para la venta de equipo de audio para shows en vivo.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/project3.jpg" alt="Project 3">
+                        <div class="carousel-caption">
+                            <h3>Base de datos sobre fórmula 1 en (JSON)</h3>
+                            <p>Una base de datos desarrollada en CouchDB y MongoDB.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </section>
+
         <!-- Sección orientada a Educación -->
         <section id="education">
             <h2> Education & Resume </h2>
-            <div class="">
+            <div>
                 <h3> Carrera Técnica en Programación </h3>
                 <h4> 2018 - 2021 </h4>
                 <p> Curse mi preparatoria con una carrera técnica en programación en el Cecyteq plantel 05. </p>
             </div>
-            <div class="">
+            <div>
                 <h3> Técnico en Programación </h3>
                 <h4> 2018 - 2021 </h4>
                 <p> Título en técnico en programación en el Cecyteq plantel 05 de Qro, desarrollando habilidades como pensamiento lógico
                     matemático, lenguajes como C++, Java y algún manejo de desarrollo de aplicaciones móviles como en Android Studio. </p>
             </div>
-            <div class="">
+            <div>
                 <h3> Manejo de Aplicaciones de Adobe </h3>
                 <h4> Autodidacta </h4>
-                <p> Poseo una habiidad del manejo de aplicaciones de Adobe, siendo estás como Photoshop, Audition, Illustrator,
-                    After Effects, y Premiere Pro, los cuáles utilizaba para trabajos en su mayoría artísticos pero ahora ayúdandome
-                    para distintos trabajos en SW como diseño web, creación de logotipos, etc. </p>
+                <p> Poseo una habilidad del manejo de aplicaciones de Adobe, siendo estas Photoshop, Audition, Illustrator,
+                    After Effects, y Premiere Pro, los cuales utilizaba para trabajos artísticos pero ahora me ayudan
+                    en distintos trabajos en SW como diseño web, creación de logotipos, etc. </p>
             </div>
         </section>
+
         <!-- Sección orientada a Habilidades -->
         <section id="skills">
-            <div class="">
-                <h2> Skills </h2>
-                <p> Estás son mis diferentes habilidades y manejo de sistemas de Software (Enfocado principalmente en desarrollo web), y en las
-                    que actualmente continúo especializandome.
-                </p>
-                <div>
-                    <h3> Adobe Products </h3>
-                    <p> 65% </p>
+            <div class="skills-container">
+                <h2>Skills</h2>
+                <p>Estas son mis diferentes habilidades y manejo de sistemas de Software (Enfocado principalmente en desarrollo web), y en las que actualmente continúo especializándome.</p>
+                
+                <div class="skill">
+                    <div class="skill-name">Adobe Products</div>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 90%;"></div>
+                    </div>
+                    <p>90%</p>
                 </div>
-                <div>
-                    <h3> HTML </h3>
-                    <p> 85% </p>
+                
+                <div class="skill">
+                    <div class="skill-name">HTML5</div>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 95%;"></div>
+                    </div>
+                    <p>95%</p>
                 </div>
-                <div>
-                    <h3> CSS </h3>
-                    <p> 70% </p>
+                
+                <div class="skill">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 70%;"></div>
+                    </div>
+                    <p>70%</p>
                 </div>
-                <div>
-                    <h3> JavaScript </h3>
-                    <p> 60% </p>
+                
+                <div class="skill">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 85%;"></div>
+                    </div>
+                    <p>85%</p>
                 </div>
-                <div>
-                    <h3> JQuery </h3>
-                    <p>  </p>
+                
+                <div class="skill">
+                    <div class="skill-name">JQuery</div>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 90%;"></div>
+                    </div>
+                    <p>90%</p>
                 </div>
-                <div>
-                    <h3> Python </h3>
-                    <p> 80% </p>
+                
+                <div class="skill">
+                    <div class="skill-name">Phyton</div>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 80%;"></div>
+                    </div>
+                    <p>80%</p>
                 </div>
             </div>
         </section>
-    <!-- Pendiente y ver que pedo -->
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p></p>
-        </section>
     </main>
-    
+
     <!-- Contact Section -->
-     <footer>
+    <footer>
         <section id="contact">
             <div class="footer-container">
                 <div class="personal-info">
@@ -138,7 +183,7 @@
                 </div>
                 <div class="contact-form">
                     <h2> MANDAME UN CORREO </h2>
-                    <p> Sí quieres mandarme un correo directo puedes hacerlo ahora! </p>
+                    <p> Si quieres mandarme un correo directo puedes hacerlo ahora! </p>
                     <!-- Formulario de contacto -->
                     <form id="contact-form">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -213,9 +258,10 @@
                 </div>                
             </div>
         </section>
-    </footer>    
+    </footer>
+
     <footer>
-        <div class = "footer-container">
+        <div class="footer-container">
             <p> Copyright &copy; 2024 All rights reserved by Santiago Ponce </p>
         </div>
     </footer>
