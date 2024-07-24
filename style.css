@@ -1,91 +1,463 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
 header {
-    background-color: #007acc;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 5px 0 15px;
-    font-size: 1.2em;
-    font-style: italic;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-main {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2em;
-    border-bottom: 2px solid #007acc;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-    color: #007acc;
-}
-
-.project {
-    margin-bottom: 15px;
-}
-
-.project h3 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #007acc;
-}
-
-a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    border-radius: 0px;
+    height: auto; 
     position: fixed;
     width: 100%;
-    bottom: 0;
+    top: 0;
+    z-index: 1000; 
+    padding-bottom: 10px; 
+}
+
+body {
+    background-color: white;
+}
+
+body h1 {
+    font-family: 'usuzi';
+    font-size: 30px;
+    color: black;
+}
+
+body h2 {
+    font-family: 'usuzi';
+    font-size: 30px;
+    color: black;
+}
+
+body p {
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    color: #000000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: flex-start; /* Alinea los elementos horizontalmente a la izquierda */
+    flex-direction: column; /* Cambia la dirección del flexbox a columnas */
+    padding-top: 20px; /* Ajusta el espaciado superior */
+    padding-bottom: 20px; /* Ajusta el espaciado inferior */
+}
+
+.welcome-container h1,
+.welcome-container h2 {
+    font-family: 'usuzi';
+    font-size: 30px;
+    color: white;
+}
+
+.welcome-container p {
+    font-family: 'Typo Formal Demo';
+    font-size: 15px;
+    color: white;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+}
+
+.header-title img {
+    margin-right: 10px;
+}
+
+.header-content h1 {
+    font-family: 'Usuzi';
+    font-size: 30px;
+    margin: 0;
+}
+
+.header-content p {
+    font-family: 'TodaySB-CapExtLig';
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.stickynav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+    border-bottom: 2px solid #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.stickynav a {
+    font-family: 'TodaySB-CapExtLig';
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo para todos los enlaces cuando se seleccionan */
+a:active {
+    color: red;
+}
+
+/* Estilo para todos los enlaces cuando se seleccionan */
+.buttons a:active {
+    color: red;
+}
+
+/* Estilo para todos los enlaces cuando tienen el foco */
+.buttons a:focus {
+    color: red;
+}
+
+/* Estilo para todos los enlaces cuando el puntero del ratón está encima */
+.buttons a:hover {
+    color: red;
+}
+
+.stickynav a:active {
+    color: red;
+}
+
+.stickynav a:focus {
+    color: red;
+}
+
+.stickynav a:hover {
+    color: red;
+}
+
+.buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.buttons a {
+    margin-left: 45px; /* Ajusta el espacio entre los botones */
+    font-family: 'usuzi';
+    text-decoration: none;
+}
+
+.login {
+    background-color: #000000; 
+    color: #ffffff;
+    margin-left: 0 px; 
+    padding: 2.5px 6px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+}
+.signup {
+    background-color: #000000; 
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px; 
+    padding: 2.5px 6px;
+    border: 2px transparent solid;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+}
+.logout {
+    background-color: #ff0000; 
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px; 
+    padding: 2.5px 6px;
+    border: 2px transparent solid;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+}
+.vip {
+    background-color: #e9aa0a; 
+    color: #fff;
+    margin-right: 70px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none; 
+    font-size: 23px; 
+}
+
+.merch-container h2 {
+    font-family: 'usuzi';
+    font-size: 30px;
+    color: black;
+}
+
+.merch-container p {
+    font-family: 'corbel';
+    font-size: 10px;
+    color: #000000;
+}
+
+.carousel-caption h3 {
+    color: white;
+    font-size: 35px;
+    font-family: 'usuzi';
+}
+
+.carousel-caption p {
+    color: white; /* Cambiar el color del texto a blanco */
+    font-size: 15px; /* Cambiar el tamaño de la fuente a 15px */
+    font-family: 'Josefin Sans Light'; /* Cambiar la familia de la fuente */
+}
+
+.productos-container {
+    margin-left: 10px;
+    margin-block-end: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Distribución de columnas */
+    gap: 20px; /* Espacio entre productos */
+}
+
+.producto {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; /* Evitar que la imagen sobresalga del contenedor */
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ccc; /* Línea divisoria */
+}
+
+.info {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.info p {
+    margin: 5px 0;
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    color: #000000;
+}
+
+
+footer {
+    background-color: #000000;
+    padding: 20px;
+}
+
+footer h2 {
+    font-family: 'USUZI';
+    color: #ffffff;
+    font-size: 20px;
+}
+footer p {
+    font-family: 'Avenir Next LT Pro';
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container label {
+    font-family: 'Typo Formal Demo';
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer-container > div {
+    flex: 1;
+    margin: 0 10px; 
+}
+
+.footer-container p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Corbel';
+}
+
+.followus h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 3px;
+}
+
+.footer-container input {
+    width: calc (100% - 20px);
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: 'Typo Formal Demo';
+}
+
+.footer-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #93B1A6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Typo Formal Demo';
+}
+
+.footer-container address {
+    margin-bottom: 10px;
+}
+
+.footer-container img {
+    width: 30px; 
+    margin-right: 10px; 
+}
+
+.icon-container a:focus img,
+.icon-container a:active img,
+.icon-container a:hover img {
+    filter: brightness(50%) hue-rotate(0deg) saturate(1000%);
+}
+
+/* General Styles (Responsive Part) */
+/* PC's standard*/
+/* Tablet */
+@media (max-width: 991px) and (min-width: 768px) {
+    /* Header */
+    .header-content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .header-title img {
+        width: 120px;
+        height: auto;
+    }
+    .header-content h1 {
+        font-size: 30px;
+    }
+    .header-content p {
+        font-size: 18px;
+    }
+    /* Botones */
+    .buttons {
+        top: 15px;
+        right: 15px;
+    }
+    .buttons a {
+        margin-left: 12px;
+        font-size: 15px;
+    }
+    /* Navbar */
+    .stickynav {
+        display: block;
+        justify-content: space-between;
+    }
+    /* Contenido principal */
+    .carousel-caption h3 {
+        font-size: 30px;
+    }
+    .carousel-caption p {
+        font-size: 16px;
+    }
+    .merch-container h2 {
+        font-size: 30px;
+    }
+    .merch-container p {
+        font-size: 14px;
+    }
+    .productos-container {
+        gap: 20px;
+    }
+    .info p {
+        font-size: 14px;
+    }
+    #about_us p {
+        font-size: 14px;
+    }
+    footer h2 {
+        font-size: 20px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
+/* Smartphone */
+@media (max-width: 767px) {
+    /* Header */
+    .header-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .header-title img {
+        width: 100px;
+        height: auto;
+    }
+    .header-content h1 {
+        font-size: 24px;
+    }
+    .header-content p {
+        font-size: 16px;
+    }
+
+    /* Botones */
+    .buttons {
+        top: 7.5px;
+        right: 7.5px;
+    }
+    .buttons a {
+        font-size: 10px; /* Tamaño de fuente más pequeño para botones */
+        padding: 6px 12px; /* Reducir el relleno para los botones */
+        margin: 3px;
+    }
+
+    .welcome-container h1 {
+        font-size: 20px; /* Tamaño de fuente más pequeño para el encabezado */
+    }
+
+    .welcome-container p {
+        font-size: 12px; /* Tamaño de fuente más pequeño para el párrafo */
+    }
+
+    /* Navbar */
+    .stickynav {
+        display: none; /* Ocultar navbar en smartphone */
+    }
+
+    /* Contenido principal */
+    .carousel-caption h3 {
+        font-size: 24px;
+    }
+    .carousel-caption p {
+        font-size: 14px;
+    }
+    .merch-container h2 {
+        font-size: 24px;
+    }
+    .merch-container p {
+        font-size: 12px;
+    }
+    .productos-container {
+        gap: 15px;
+    }
+    .info p {
+        font-size: 12px;
+    }
+    #about_us p {
+        font-size: 12px;
+    }
+    footer h2 {
+        font-size: 18px;
+    }
+    footer p {
+        font-size: 12px;
+    }
 }
